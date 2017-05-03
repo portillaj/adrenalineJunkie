@@ -1,6 +1,8 @@
 var express = require('express');
 var methodOverride = require('method-override');
 var app = express();
+var db = require("./models");
+
 var port = 3000;
 var bodyParser = require('body-parser');
 var hbs = require('express-handlebars');
@@ -15,11 +17,8 @@ app.set("view engine", "handlebars");
 require("./routes/api-routes.js")(app);
 
 // // Requiring our models for syncing
-// var db = require("./models");
-
-  app.listen(process.env.port || 3000, function() {
+ db.sequelize.sync().then(function() {
+  app.listen(port, function() {
     console.log("App listening on PORT " + port);
   });
-
-
-
+});

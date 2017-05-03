@@ -1,3 +1,11 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+ var js, fjs = d.getElementsByTagName(s)[0];
+ if (d.getElementById(id)) return;
+ js = d.createElement(s); js.id = id;
+ js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=1830500367270429";
+ fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <center><div id="container">
 <img src="../assets/img/adrenaline-header.png" id="header" class="bounce">
   <div class="form">
@@ -11,27 +19,34 @@
         <div id="signup">   
           <h1 class="bounce"><strong>Sign Up for Free</strong></h1>
           
-          <form action="/" method="POST">
+          <form action="/testing" method="POST">
           
           <div class="top-row">
             <div class="field-wrap">
-              <input type="text" placeholder="First Name"/>
+              <input type="text" placeholder="First Name" name="first_name" id="first"/>
             </div>
         
             <div class="field-wrap">
-              <input type="text" placeholder="Last Name" />
+              <input type="text" placeholder="Last Name" name="last_name" id="last" />
             </div>
           </div>
+
+            <div class="field-wrap">
+            <input type="text" placeholder="User Name" name="user_name" id="user" />
+          </div>
+
           <div class="field-wrap">
-            <input type="email" placeholder="Email Address" />
+            <input type="email" placeholder="Email Address" name="email_address" id="email"/>
           </div>
           
           <div class="field-wrap">
-            <input type="password" placeholder="Set a Password" />
+            <input type="password" placeholder="Set a Password (at least 7 characters)" name="password" id="pass" />
           </div>
           
-          <button type="submit" id="submitone" class="button button-block"/>Get Started</button>
+          <button type="submit" id="sign-up" class="button button-block"/>Get Started</button>
           </form>
+
+          <div class="fb-login-button" data-width="150" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>
 
         </div>
         
