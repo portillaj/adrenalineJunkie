@@ -22,27 +22,30 @@ module.exports = function(app) {
 //make sure user name matches the password associated with user
 
   app.post("/testing", function(req, res){
-    valid.validate();
-  	var email = req.body.email_address;
-  		db.User.findAll({}).then(function(results){
-        console.log(results.dataValues.email);
-        if(email === results.email){
-          console.log("email already taken");
-        }else {
-          console.log("new user added");
-        }
-  		});
 	  	db.User.create({
 	  		first_name: req.body.first_name,
 	  		last_name: req.body.last_name,
 	  		email: req.body.email_address,
-	  		password: req.body.password,
+	  		password: req.body.pass,
 	  		user_name: req.body.user_name
 	  	}).then(function(user){
 	  		res.json("user");	
 	 
 	  	});
 });//end post
+
+app.post("/profile", function(req,res){
+  db.User.findAll({
+    where: {
+      user_name: req.body.login_user,
+      password: req.body.login_pass
+    }
+  }).then(function(results){
+    console.log(results);
+    res.json(results);
+
+  });
+});//end app.get profile
 
 
 
