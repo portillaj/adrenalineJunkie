@@ -35,13 +35,17 @@ a:hover {
 
 .form {
 	/*background-image: url("../images/ancient-aliens.jpg");*/
-  background: black;
+  
   padding: 35px;
   max-width: 600px;
   margin: 15px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
-  opacity: 9;/*see if this is working with the image in the background*/
+  /*see if this is working with the image in the background*/
+}
+
+#back-form {
+  background: rgba(0,0,0,0.7);
 }
 
 .tab-group {
