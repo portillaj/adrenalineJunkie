@@ -9,7 +9,7 @@ html {
 body {
   background: #c1bdba;
   font-family: 'helvetica', sans-serif;
-  background-image: url("../pexels-photo.jpg");
+  background-image: url("../img/pexels-photo.jpg");
   background-size: 110%;
 }
 
@@ -27,7 +27,7 @@ a:hover {
 	margin-top: 15px;
 	width: 600px;
 	height: 85px;
-	background-image: url("../AJ-Header-final-1.png");
+	background-image: url("../img/AJ-Header-final-1.png");
 	color: #0ba800;
   background-size: 100%;
 }

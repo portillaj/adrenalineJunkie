@@ -20,6 +20,7 @@ var profile = require("./routes/profile");
 
 app.use("/", routes);
 app.use("/", profile);
+
 // // Requiring our models for syncing
  db.sequelize.sync().then(function() {
   app.listen(port, function() {
