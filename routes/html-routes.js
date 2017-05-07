@@ -1,8 +1,8 @@
-var path = require("path");
+// var express = require('express');
+// var path = require("path");
 
-module.exports = function(app) {
+//   router.get("/", function(req, res) {
+//     res.sendFile(path.join(__dirname, "/../public/login.html"));
+//   });
 
-  app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "/../public/login.html"));
-  });
-};
+// module.exports = router;

@@ -1,8 +1,13 @@
 // Routes
 // =============================================================
+var express = require('express');
 var db = require("../models");
+var router = express.Router();
+var path = require('path');
+var router = express.Router();
+
 //var valid = require("./public/assets/js/signup.js");
-module.exports = function(app) {
+
   // GET route for getting all of the posts
  
 //sign up page
@@ -21,7 +26,12 @@ module.exports = function(app) {
 //login page
 //make sure user name matches the password associated with user
 
-  app.post("/testing", function(req, res){
+ router.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "/../public/login.html"));
+  });
+
+
+  router.post("/testing", function(req, res){
 	  	db.User.create({
 	  		first_name: req.body.first_name,
 	  		last_name: req.body.last_name,
@@ -34,7 +44,7 @@ module.exports = function(app) {
 	  	});
 });//end post
 
-app.post("/profile", function(req,res){
+router.post("/profile", function(req,res){
   db.User.findAll({
     where: {
       user_name: req.body.login_user,
@@ -54,4 +64,4 @@ app.post("/profile", function(req,res){
 	
 // }//end function
 
-};
+module.exports = router;
