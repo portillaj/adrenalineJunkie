@@ -235,7 +235,7 @@ h3 {
 }
 
 .header {
-	width: 1000px;
+	width: 1050px;
 	height: 300px;
 	border: 2px solid black;
 
@@ -243,7 +243,7 @@ h3 {
 
 .profilepic {
 	position: absolute;
-	margin-left: -950px;
+	margin-left: -1020px;
 	margin-top: 220px;
 	width: 180px;
 	height: 180px;
@@ -252,5 +252,88 @@ h3 {
 }
 
 .caletext {
-	margin-left: 360px;
+	margin-left: 320px;
 }
+
+.post {
+	width: 90px;
+	height: 50px;
+	border: 3px solid #1bb700;
+	border-radius: 55%;
+	float: right;
+	margin-right: 100px;
+}
+
+.followers {
+	width: 90px;
+	height: 50px;
+	border: 3px solid #1bb700;
+	border-radius: 55%;
+	float: right;
+	margin-right: 15px;
+
+}
+
+.following {
+	width: 90px;
+	height: 50px;
+	border: 3px solid #1bb700;
+	border-radius: 55%;
+	float: right;
+	margin-right: 15px;
+
+}
+
+#socialbuttons {
+	margin-top: -70px;
+}
+
+#viprating {
+	display: block;
+	width: 350px;
+	height: 50px;
+	background-color: #1bb700;
+	margin-left: -1px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	border: 2px solid black;
+	
+}
+
+.col2 {
+	
+	width: 350px;
+	height: auto;
+	margin-top: -20px;
+	margin-left: 100px;
+	background-color: white;
+	float: right;
+	margin-right: 70px;
+	border: 1px solid black;
+
+	}
+
+	#h35 {
+		margin-top: 8px;
+	}
+
+	.vtext {
+		}
+
+	.vipbadge {
+		width: 200px;
+		height: 205px;
+	}
+
+	.voteb {
+		background-color: #1bb700;
+
+	}
+
+	#footer {
+		margin-top: 800px;
+	}
+
+	#calevideos {
+		margin-left: 50px;
+	}
