@@ -14,7 +14,9 @@ h4 {
 	float: right;
 	margin-top: -100px;
 	margin-right: 30px;
+
 }
+
 
 #search {
 	float: left;
@@ -178,7 +180,7 @@ h3 {
 	border: 3px solid black;
 	border-radius: 50%;
 	margin-top: -110px;
-	margin-right: -70px;
+	margin-right: 35px;
 }
 
 #user2 {
@@ -337,3 +339,4 @@ h3 {
 	#calevideos {
 		margin-left: 50px;
 	}
+

@@ -38,13 +38,32 @@
     <br>
 
     <div id="buttons">
-    <img class="upload" src= "assets/img/arrow.png">
-    <button id="upload">Upload</button>
-    <img class="home" src= "assets/img/Home-icon.png">
+    <a data-target="#myModal" data-toggle="modal">
+  <img class="upload" src="assets/img/arrow.png">
+</a>
 
-    <a href = "entrypage.html"><button id="profile">Home</button></a>
+<!-- Modal -->
+<div tabindex="-1" class="modal fade" id="myModal" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+        <h4 class="modal-title" id="myModalLabel">Upload Video</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+        <button class="btn btn-primary" type="button">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    
+    <a href = ""><img class="home" src= "assets/img/Home-icon.png"></a>
+
     </div>
-
     <div id="search">
     <input type="text" name="search" placeholder="Search Adrenaline Junkeys" id="box">
     </div>
