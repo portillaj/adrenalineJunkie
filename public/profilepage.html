@@ -134,6 +134,17 @@
   <div id="footer">Footer</div>
     <br>
     <br>
+<script type="text/javascript">
+  $("#getFile").on('click', function(){
+    $.ajax({
+          url: '/profile_image',
+          method: "GET"
+        }).done(function(response) {
+          console.log(response);
+          $("#user1").attr("src", response);
+        });
+  });//end click function
 
+</script>
 </body>
 </html>
