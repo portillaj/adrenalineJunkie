@@ -152,7 +152,7 @@ h3 {
 	background-color: #808080;
 	width: 720px;
 	height: auto;
-	margin-top: 50px;
+	margin-top: 100px;
 	border: 2px solid black;
 
 }
@@ -161,7 +161,7 @@ h3 {
 	
 	width: 350px;
 	height: auto;
-	margin-top: 33px;
+	margin-top: 0px;
 	margin-left: 100px;
 	background-color: #808080;
 	border: 2px solid black;
@@ -173,8 +173,7 @@ h3 {
 	border: 3px solid black;
 	border-radius: 50%;
 	margin-top: -110px;
-	margin-right: -200px;
-	margin-left: 1px;
+	margin-left: -165px;
 }
 
 .upload {
@@ -183,8 +182,7 @@ h3 {
 	border: 3px solid black;
 	border-radius: 50%;
 	margin-top: -110px;
-	margin-right: -215px;
-	margin-left: -149px;
+	margin-right: -80px;
 
 }
 
@@ -358,7 +356,7 @@ h3 {
 	#VIPusers2 {
 		width: 350px;
 		height: 50px;
-		margin-top: -2056px;
+		margin-top: -2083px;
 		margin-right: 155px;
 		background-color: #1bb700;
 		border: 2px solid black;
