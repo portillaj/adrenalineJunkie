@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> 
+  <link rel="stylesheet" href="assets/css/style2.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+
+</head>
+
+<body>
+
+<hr class="line1">
+<div class="jumbotron jumbotron-fluid">
+
+  <div class="container">
+    <center><a href = "entrypage.html"><img class="logo" src= "assets/img/AJ-Logo-transparent.png"></a></center>
+    
+    <div id="profileuser1"> 
+    <a href = "profilepage.html"><img id= "user1" src= "assets/img/AJ-User-Pic1.png"></a>
+    <h4>Sky_Cale</h4>
+    </div>
+
+   
+   <!--  <div id="profile">
+    <h4><strong>sky_2308M</strong></h4>
+    </div> -->
+    <br>
+    <br>
+
+    <div id="buttons">
+    <!-- <a href = ""><img class="upload" src= "assets/img/arrow.png"></a> -->
+    <!-- image trigger modal -->
+<a data-target="#myModal" data-toggle="modal">
+  <img class="upload" src="assets/img/arrow.png">
+</a>
+
+<!-- Modal -->
+<div tabindex="-1" class="modal fade" id="myModal" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+        <h4 class="modal-title" id="myModalLabel">Upload Video</h4>
+      </div>
+      <div class="modal-body">
+         <form id="file-form" action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" id="file-select" name="photos" multiple/>
+      </div>
+      <div class="modal-footer">
+         <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+       <input type="submit" class="btn btn-primary" id="getFile">
+       
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    
+    <a href="entrypage.html"><img class="home" src= "assets/img/Home-icon.png"></a>
+
+    </div>
+
+    <div id="search">
+    <input type="text" name="search" placeholder="Search Adrenaline Junkeys" id="box">
+    </div>
+
+     <div id="logo">
+    <img class="monkey" src="assets/img/ajMonkey.png">
+    </div>
+
+  </div>
+
+</div>
+
+<div class = "boxline">
+<hr class="line2">
+</div>
+
+<center><div id="profileimages">
+<img class="header" src="assets/img/caleheader.png">
+<img class="profilepic" src="http://localhost:3000/profile_image">
+</div></center>
+
+<div class="caletext">
+<h4>"Sky_Cale" - - -> Member since April 2017</h4>
+<p>Hi, my name is Cale and I am a Adrenaline Junkey.<br>Check out some of my videos for excitement and adrenaline humour.</p>
+</div>
+
+<div id="socialbuttons">
+<img class="post" src="assets/img/postsbutton.png">
+<img class="followers" src="assets/img/followersbutton.png">
+<img class="following" src="assets/img/followingbutton.png">
+</div>
+
+<br>
+
+<br>
+<br>
+<br>
+<hr>
+<br>
+
+<div class="col1">
+    <div id="calevideos">Video go here</div>
+</div>
+
+<div class="col2">
+
+    <div id="viprating">
+    <center><h3 id="h35">VIP Rating</h3></center></div>
+
+    <div class="vote">
+    <center><p class="vtext"><strong>Vote for Cale to get a VIP Badge!</strong></p></center>
+    <div id="CaleCounter"></div>
+
+    <center><img class="vipbadge" src="http://localhost:3000/profile_image"></center>
+    <br>
+    <center><button class="voteb"><strong>Click to Vote</strong></button></center>
+  <br>
+    </div>
+    </div>
+<!-- Ask Brian how to make the text go under the divs.. text is going to the left intstead. Want text under the 2 divs to go in the footer section-->
+
+  <div id="footer">Footer</div>
+    <br>
+    <br>
+
+</body>
+</html>
