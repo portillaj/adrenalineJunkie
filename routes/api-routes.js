@@ -64,8 +64,7 @@ router.get("/profile_image", function(req, res){
     }
   }).then(function(results){
     var pic = results.picture;
-    res.setHeader('Content-Type', 'text/html');
-    res.send(pic);
+    res.json(pic);
     console.log(pic);
 
   });
