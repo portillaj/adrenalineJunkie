@@ -27,7 +27,7 @@ a:hover {
 	margin-top: 15px;
 	width: 600px;
 	height: 85px;
-	background-image: url("../img/AJ-Header-final-1.png");
+	background-image: url("../img/AJ-Header-new.png");
 	color: #0ba800;
   background-size: 100%;
 }
@@ -42,6 +42,7 @@ a:hover {
   margin: 85px auto;
   border-radius: 3px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   
   }
 
