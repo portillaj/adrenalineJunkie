@@ -4,11 +4,12 @@ var router = express.Router();
 var multer = require('multer');
 var path = require('path');
 var mime = require('mime');
+var db = require("../models");
 
 //route of profile section
-router.get("/testing", function(req, res) {
-    console.log("working profile");
-    res.sendFile(path.join(__dirname, "/../public/test.html"));
+router.get("/profile", function(req, res) {
+  
+        res.sendFile(path.join(__dirname, "/../public/profilepage.html"));
     
   });
 
@@ -28,7 +29,7 @@ var storage = multer.diskStorage({
 var upload = multer({ storage: storage });
 
 //our post where we would upload our photo and video
-router.post('/upload', upload.single('pic'), function(req,res){
+router.post('/upload', upload.single('photos'), function(req,res){
   console.log(req.body); //form fields
   /* example output:
   { title: 'abc' }
@@ -44,9 +45,19 @@ router.post('/upload', upload.single('pic'), function(req,res){
               path: 'uploads/436ec561793aa4dc475a88e84776b1b9',
               size: 277056 }
    */
-   res.json("uploaded");
-  res.status(204).end();
+   var getPath = req.file.path;
+   db.User.update({
+    picture: getPath,
+    }, {
+    where: {
+      id: 1
+  }
+   }).then(function(results){
+       res.redirect("/profile");
+   });
+ 
 });
 
 //export our router to the app.js file to run the app
 module.exports = router;
+

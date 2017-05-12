@@ -23,12 +23,14 @@
 <div class="jumbotron jumbotron-fluid">
 
   <div class="container">
-    <center> <img class="logo" src= "assets/img/AJ-Logo-transparent.png"></center>
+    <center><a href = "entrypage.html"><img class="logo" src= "assets/img/AJ-Logo-transparent.png"></a></center>
     
     <div id="profileuser1"> 
-    <img id= "user1" src= "assets/img/AJ-User-Pic1.png">
+    <a href = "profilepage.html"><img id= "user1" src= "assets/img/AJ-User-Pic1.png"></a>
     <h4>Sky_Cale</h4>
     </div>
+
+   
    <!--  <div id="profile">
     <h4><strong>sky_2308M</strong></h4>
     </div> -->
@@ -36,15 +38,44 @@
     <br>
 
     <div id="buttons">
-    <img class="upload" src= "assets/img/arrow.png">
-    <button id="upload">Upload</button>
-    <img class="home" src= "assets/img/Home-icon.png">
+    <!-- <a href = ""><img class="upload" src= "assets/img/arrow.png"></a> -->
+    <!-- image trigger modal -->
+<a data-target="#myModal" data-toggle="modal">
+  <img class="upload" src="assets/img/arrow.png">
+</a>
 
-    <button id="profile">Home</button>
+<!-- Modal -->
+<div tabindex="-1" class="modal fade" id="myModal" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+        <h4 class="modal-title" id="myModalLabel">Upload Video</h4>
+      </div>
+      <div class="modal-body">
+         <form id="file-form" action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" id="file-select" name="photos" multiple/>
+      </div>
+      <div class="modal-footer">
+         <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+       <input type="submit" class="btn btn-primary" id="getFile">
+       
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    
+    <a href="entrypage.html"><img class="home" src= "assets/img/Home-icon.png"></a>
+
     </div>
 
     <div id="search">
     <input type="text" name="search" placeholder="Search Adrenaline Junkeys" id="box">
+    </div>
+
+     <div id="logo">
+    <img class="monkey" src="assets/img/ajMonkey.png">
     </div>
 
   </div>
@@ -71,10 +102,10 @@
 <!--video 1 starts here -->
 
    <div id= "vid1">
-   <img src= "AJ-User-Pic2.png" id="user2">
+   <img src= "assets/img/AJ-User-Pic2.png" id="user2">
    <div id="brian">
    <h5>BR2Nice ... TOP USER SINCE APRIL 2017 - GO BANANAS</h5>
-  <p id="btext">37 min ago</p>
+  <p id="btext">27 min ago</p>
    </div>
    <br>
    <br>
@@ -83,7 +114,7 @@
   <br>
   <br>
 
-    <center><textarea rows="4" cols="99" name="comment" form="usrform" value="comment">Comment</textarea></center>
+    <center><textarea id="columnbox" rows="4" cols="99" name="comment" form="usrform" value="comment">Comment</textarea></center>
     <br>
    </div>
 
@@ -92,37 +123,89 @@
    <br>
    <br>
  <div id= "vid1">
-   <img src= "AJ-User-Pic2.png" id="user2">
+   <img src= "assets/img/AJ-User-Pic3.png" id="user2">
    <div id="brian">
-   <h5>BR2Nice ... TOP USER SINCE APRIL 2017 - GO BANANAS</h5>
-  <p id="btext">37 min ago</p>
+   <h5>Martin_SpiderJumper ... TOP USER SINCE APRIL 2017 - GO BANANAS</h5>
+  <p id="btext">15 min ago</p>
    </div>
    <br>
    <br>
-    <div id="youtube1"> <center><iframe width="660" height="375" src="https://www.youtube.com/embed/lq-54gox6-k" frameborder="0" allowfullscreen></iframe></center></div>
+    <div id="youtube1"> <center><iframe width="660" height="375" src="https://www.youtube.com/embed/uAz9hZmcr58" frameborder="0" allowfullscreen></iframe></center></div>
   
   <br>
   <br>
 
-    <center><textarea rows="4" cols="99" name="comment" form="usrform" value="comment">Comment</textarea></center>
+    <center><textarea id="columnbox" rows="4" cols="99" name="comment" form="usrform" value="comment">Comment</textarea></center>
     <br>
    </div>
 
 <br>
+<br>
+<!--video 3 starts here -->
+ <div id= "vid1">
+   <img src= "assets/img/AJ-User-Pic4.png" id="user2">
+   <div id="brian">
+   <h5>J_Taurus25... TOP USER SINCE APRIL 2017 - GO BANANAS</h5>
+  <p id="btext">3 min ago</p>
+   </div>
+   <br>
+   <br>
+    <div id="youtube1"> <center><iframe width="660" height="375" src="https://www.youtube.com/embed/8JJqMuptrM8" frameborder="0" allowfullscreen></iframe></center></div>
+  
+  <br>
+  <br>
+
+    <center><textarea id="columnbox" rows="4" cols="99" name="comment" form="usrform" value="comment">Comment</textarea></center>
+    <br>
+   </div>
+
+   <br>
 
   </div>
 
-  <div class="col-sm-4">
 
-    <div id="categories">
-    <center><h3 id="h32">Categories</h3></center></div>
+</div>
+</div>
+
+
+  <div id="VIPusers2">
+      <center><h3 id="h32">Categories</h3></center>
     
+    <div id="ccontent">
+    <br>
 
-    <p> test</p>
-    <p> test</p>
+    <div class="links">
+    <center><p><strong>Choose a Category</strong></p></center>
+    <center><a href="#">Water Sports</a></center>
+    <center><a href="#">Sky/Base Jumps</a></center>
+    <center><a href="#">Snow Sports</a></center>
+    <center><a href="#">Anything on  Wheels</a></center>
+    <center><a href="#">Climbing</a></center>
+    <center><a href="#">Races</a></center>
+    <center><a href="#">Random Nonsense</a></center>
+
     </div>
-</div>
-</div>
+
+    <br>
+
+    <center><h4 class = "questions">ADRENALINE FACTS</h4></center>
+    <center><p class="adrenalineFacts">Did you know that Adrenaline stimulates your brain so you can think more quickly?</p></center>
+    <br>
+    </div>
+    <br>
+
+    </div>
+  
+  </div>
+
+
+ <div id="VIPusers">
+    <center><h3 class="vipheading">VIP Users</h3></center>
+    <div class="vipimage"><img class="imagevip" src="assets/img/vipusers.png"></div>
+  
+  </div>
+
+
 
 <!-- <center><div id="vids">
 <div id="categories">
@@ -133,6 +216,6 @@
 <center><h3>Today's Hot Picks</h3></center>
 <center><iframe width="750" height="415" src="https://www.youtube.com/embed/lq-54gox6-k" frameborder="0" allowfullscreen></iframe></center>
 </div>
-</div></center> -->
+</div></center>
 </body>
 </html>

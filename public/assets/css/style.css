@@ -27,7 +27,7 @@ a:hover {
 	margin-top: 15px;
 	width: 600px;
 	height: 85px;
-	background-image: url("../img/AJ-Header-final-1.png");
+	background-image: url("../img/AJ-Header-new.png");
 	color: #0ba800;
   background-size: 100%;
 }
@@ -42,6 +42,7 @@ a:hover {
   margin: 85px auto;
   border-radius: 3px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   
   }
 
@@ -192,3 +193,57 @@ textarea {
   text-align: right;
   color: #0ba800;
 }
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-left: 25px;
+}
+.logoName{
+  margin-left: 10px;
+}
+
+.buttonLP {
+  border: 3;
+  outline: none;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #0fe500;
+  color: black;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+  border-color: black;
+  margin-top: 35%;
+  margin-left: 38%;
+
+}
+.buttonLP:hover, .buttonLP:focus {
+  background: black;
+  cursor: pointer;
+  color: #0DC100;
+  border-color: #0DC100;
+
+}
+

@@ -1,13 +1,18 @@
-
 .lead {
 
 	color: red !important;
 }
 
 h4 {
-	margin-left: 0px;
+	margin-left: 10px;
 	margin-top: 10px;
 
+}
+
+#container {
+	position: absolute;
+	z-index: 10000;
+	left: 27%;
 }
 
 #buttons {
@@ -82,16 +87,16 @@ h5 {
 }
 
 #profileuser1 {
-	margin-top: -137px;
+	margin-top: -155px;
 	float: right;
-	margin-right: 265px;
+	margin-right: 235px;
 
 }
 
 #user1 {
 
-	width: 75px;
-	height: 75px;
+	width: 100px;
+	height: 100px;
 	border: 3px solid black;
 	border-radius: 50%;
 }
@@ -143,11 +148,11 @@ h3 {
 }
 
 .col-sm-8 {
-	margin-left: 50px;
+	margin-left: 150px;
 	background-color: #808080;
 	width: 720px;
 	height: auto;
-	margin-top: 50px;
+	margin-top: 100px;
 	border: 2px solid black;
 
 }
@@ -156,29 +161,29 @@ h3 {
 	
 	width: 350px;
 	height: auto;
-	margin-top: 33px;
+	margin-top: 0px;
 	margin-left: 100px;
 	background-color: #808080;
 	border: 2px solid black;
 }
 
 .home {
-	width: 70px;
-	height: 70px;
+	width: 100px;
+	height: 100px;
+	border: 3px solid black;
+	border-radius: 50%;
+	margin-top: -110px;
+	margin-left: -165px;
+}
+
+.upload {
+	width: 100px;
+	height: 100px;
 	border: 3px solid black;
 	border-radius: 50%;
 	margin-top: -110px;
 	margin-right: -80px;
-	margin-left: 45px;
-}
 
-.upload {
-	width: 70px;
-	height: 70px;
-	border: 3px solid black;
-	border-radius: 50%;
-	margin-top: -110px;
-	margin-right: -70px;
 }
 
 #user2 {
@@ -216,5 +221,223 @@ h3 {
 	margin-top: -10px;
 	margin-bottom: 20px;
 	border: 2px solid black;
+	float: right;
 	
 }
+
+.monkey {
+	width: 100px;
+	height: 120px;
+}
+
+#logo {
+	margin-top: -250px;
+	margin-left: 125px;
+}
+
+#ccontent {
+	display: block;
+	background-color: white;
+	border: 2px solid black;
+	width: 349px;
+	margin-left: -1px;
+
+
+}
+
+.header {
+	width: 1200px;
+	height: 300px;
+	border: 2px solid black;
+
+}
+
+.profilepic {
+	position: absolute;
+	margin-left: -1150px;
+	margin-top: 220px;
+	width: 180px;
+	height: 180px;
+	border: 3px solid black;
+	border-radius: 55%;
+}
+
+.caletext {
+	margin-left: 380px;
+}
+
+#calep {
+	margin-left: 20px;
+}
+
+.post {
+	width: 90px;
+	height: 50px;
+	border: 3px solid #1bb700;
+	border-radius: 55%;
+	float: right;
+	margin-right: 100px;
+}
+
+.followers {
+	width: 90px;
+	height: 50px;
+	border: 3px solid #1bb700;
+	border-radius: 55%;
+	float: right;
+	margin-right: 15px;
+
+}
+
+.following {
+	width: 90px;
+	height: 50px;
+	border: 3px solid #1bb700;
+	border-radius: 55%;
+	float: right;
+	margin-right: 15px;
+
+}
+
+#socialbuttons {
+	margin-top: -70px;
+	margin-right: 70px;
+}
+
+#viprating {
+	display: block;
+	width: 350px;
+	height: 50px;
+	background-color: #1bb700;
+	margin-left: -1px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	border: 2px solid black;
+	
+}
+
+.col2 {
+	
+	width: 350px;
+	height: auto;
+	margin-top: -20px;
+	margin-right: 150px;
+	background-color: white;
+	float: right;
+	border: 1px solid black;
+
+	}
+
+	#h35 {
+		margin-top: 8px;
+	}
+
+	.vtext {
+		}
+
+	.vipbadge {
+		width: 200px;
+		height: 205px;
+	}
+
+	.voteb {
+		background-color: #1bb700;
+
+	}
+
+	#footer {
+		margin-top: 800px;
+	}
+
+	#calevideos {
+		margin-left: 150px;
+	}
+
+	#VIPusers2 {
+		width: 350px;
+		height: 50px;
+		margin-top: -2083px;
+		margin-right: 155px;
+		background-color: #1bb700;
+		border: 2px solid black;
+		float: right;
+	}
+
+	#VIPusers {
+		width: 350px;
+		height: 50px;
+		margin-top: -1600px;
+		margin-right: 155px;
+		background-color: #1bb700;
+		border: 2px solid black;
+		float: right;
+	}
+
+.vipheading {
+		margin-top: 8px;
+	}
+
+.imagevip {
+	width: 345px;
+	margin-top: 3px;
+	}
+
+	/*Slider test code here */
+
+	.slider {
+		display: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	.slide-viewer {
+		overflow: hidden;
+		height: 900px;
+
+	}
+
+	.slide-group {
+		width: 100%;
+		height: 100%;
+		position: relative;
+
+	}
+
+	.slide {
+		width: 100%;
+		height: 100%;
+		display: none;
+		position: absolute;
+	}
+
+	.slide:first-child {
+		display: block;
+	}
+
+	.slideimage1 {
+		width: 100%;
+		height: 100%;
+	}
+
+	.slideimage2 {
+		width: 100%;
+		height: 100%;
+	}
+
+	.slideimage3 {
+		width: 100%;
+		height: 100%;
+	}
+
+	.adrenalineFacts {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#columnbox {
+		width: 630px;
+	}
+
+	#col1 {
+		width: 600px;
+	}
