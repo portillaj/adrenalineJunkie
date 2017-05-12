@@ -5,6 +5,7 @@ var db = require("../models");
 var router = express.Router();
 var path = require('path');
 var router = express.Router();
+var fs = require('fs');
 
 //var valid = require("./public/assets/js/signup.js");
 
@@ -30,21 +31,19 @@ var router = express.Router();
     res.sendFile(path.join(__dirname, "/../public/login.html"));
   });
 
-
   router.post("/testing", function(req, res){
-	  	db.User.create({
-	  		first_name: req.body.first_name,
-	  		last_name: req.body.last_name,
-	  		email: req.body.email_address,
-	  		password: req.body.pass,
-	  		user_name: req.body.user_name
-	  	}).then(function(user){
-	  		res.json("user");	
-	 
-	  	});
+      db.User.create({
+        first_name: req.body.first_name,
+        last_name: req.body.last_name,
+        email: req.body.email_address,
+        password: req.body.pass,
+        user_name: req.body.user_name
+      }).then(function(user){
+        res.json("user"); 
+      });
 });//end post
 
-router.post("/profile", function(req,res){
+router.post("/myprofile", function(req,res){
   db.User.findAll({
     where: {
       user_name: req.body.login_user,
@@ -57,11 +56,21 @@ router.post("/profile", function(req,res){
   });
 });//end app.get profile
 
+router.get("/profile_image", function(req, res){
+ console.log("work");
+  db.User.findOne({
+    where: {
+      id: 1
+    }
+  }).then(function(results){
+    var pic = results.picture;
+    res.setHeader('Content-Type', 'text/html');
+    res.send(pic);
+    console.log(pic);
 
-
-
-// function emailMatch(){
-	
+  });
+});
+  
 // }//end function
 
 module.exports = router;
