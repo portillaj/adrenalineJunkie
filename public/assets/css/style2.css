@@ -114,8 +114,10 @@ h5 {
 
 #container2 {
 	background-color: #404040;
+	background-image: url("../img/background-image-4.jpeg");
+	background-color: rgba(0, 0, 0, 0.6);
 	margin-top: -25px;
-	background-blend-mode: 8;
+	/*background-blend-mode: 8;*/
 }
 
 #heading3 {
