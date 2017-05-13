@@ -43,7 +43,7 @@ var fs = require('fs');
       });
 });//end post
 
-router.post("/myprofile", function(req,res){
+router.post("/profile", function(req,res){
   db.User.findAll({
     where: {
       user_name: req.body.login_user,
@@ -51,7 +51,7 @@ router.post("/myprofile", function(req,res){
     }
   }).then(function(results){
     console.log(results);
-    res.json(results);
+    res.redirect();
 
   });
 });//end app.get profile
@@ -68,6 +68,10 @@ router.get("/profile_image", function(req, res){
     console.log(pic);
 
   });
+});
+
+router.get("/entry", function(req, res){
+  res.sendFile(path.join(__dirname, "/../public/entrypage.html"));
 });
   
 // }//end function
